@@ -137,8 +137,6 @@ function lyrics( $url, $info = TRUE ){
 * @return array/string Data of song: artist, title, genre, tags (array: name, link), featurings (array: name, link), producers (array: name, link), lyrics
 */
 function lyricsByID( $ID, $info = TRUE ){
-
 	return lyrics( "http://genius.com/songs/" . $ID );
-
 }
 ?>
