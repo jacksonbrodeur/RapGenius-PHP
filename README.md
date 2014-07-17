@@ -5,7 +5,7 @@ Simple API for Genius.com (old RapGenius.com) written in PHP.
 
 ## Rationale
 
-  This project was created because RapGenius does currently not support a Node.js API.
+  This project was created because RapGenius does currently not support a PHP API. It uses [PHP Simple HTML DOM Parser](http://sourceforge.net/projects/simplehtmldom/).
   
 ## Usage
 
