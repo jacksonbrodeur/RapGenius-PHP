@@ -41,6 +41,11 @@ Simple API for Genius.com (old RapGenius.com) written in PHP.
              - link: string
       - lyrics: string
     
+## Thanks to:
+  - Thanks to:
+    - [PHP Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net/)
+    - [Rap Genius Polska](https://www.facebook.com/RapGeniusPolska?ref_type=bookmark)
+
 ## Licence
 
 MIT (Make It Tremendous)
