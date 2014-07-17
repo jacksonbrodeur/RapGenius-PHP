@@ -13,8 +13,7 @@ function album_list( $artist ){
 	
 	foreach($html->find('ul.album_list li a') as $e){
 		$albums[ ] = array( "name" =>  $e->plaintext, 
-					"link" => "http://genius.com" . $e->href
-					);
+			"link" => "http://genius.com" . $e->href );
 	}
 	
 	return $albums;
