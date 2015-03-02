@@ -30,11 +30,15 @@ function tracklist( $url ){
 	$html = file_get_html( $url );
 	
 	foreach( $html->find('ul.song_list li') as $e ){
-	
-		$id = $e->getAttribute( "data-id" );
-		$link = "http://genius.com" . $e->find( "a", 0 )->href;
-		$title = trim( $e->find( "span.song_title", 0 )->plaintext );
-		$artist = trim( $e->find( "span.artist_name", 0 )->plaintext );
+		try
+		{
+			$id = $e->getAttribute( "data-id" );
+			$link = $e->find( "a", 0 )->href;
+			$title = trim( $e->find( "span.song_title", 0 )->plaintext );
+			$artist = trim( $e->find( "span.artist_name", 0 )->plaintext );
+		} catch (Exception $e) {
+			continue;
+		}
 		
 		$songs[] = array( "id" => $id, "link" => $link, "title" => $title, "artist" => $artist );
 	}
